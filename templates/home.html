@@ -1,0 +1,26 @@
+<html>
+<head>
+
+
+</head>
+
+<title> Word Count </title>
+
+<body>
+
+
+    <h1> Word Count </h1>
+<!-- #this is the best way to ref a page -->
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="20" name="fulltext"></textarea>
+        <br>
+        <input type="submit" value="Count!" />
+        <br>
+    </form>
+
+    <!-- About Page Link -->
+    <a href="{% url 'about' %}">About</a>
+
+</body>
+
+</html>
